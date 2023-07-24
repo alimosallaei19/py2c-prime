@@ -71,7 +71,7 @@ Usage:      `bme680/all`
 Response:   `[temp],[pressure],[humidity]`
 Resp. Type: See above.
 
-## "rm3100" - Magnetometer
+### "rm3100" - Magnetometer
 
 --- get X measurement ---
 
