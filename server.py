@@ -51,4 +51,4 @@ while True:
 
     client_socket.send(response.encode('utf-8'))
 
-    client_socket.close()
+    #client_socket.close()
