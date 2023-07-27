@@ -16,11 +16,11 @@ rm3100 = RM3100()
 def test():
     return "Hello from server.py!"
 
+# Accept a client connection
+client_socket, client_address = sock.accept()
+print(f"Client connected: {client_address}")
+
 while True:
-    # Accept a client connection
-    client_socket, client_address = sock.accept()
-    
-    print(f"Client connected: {client_address}")
 
     # Receive data from client
     data = client_socket.recv(1024).decode('utf-8')
@@ -50,5 +50,3 @@ while True:
             response = str(rm3100.get_x()) + "," + str(rm3100.get_y()) + "," + str(rm3100.get_z())
 
     client_socket.send(response.encode('utf-8'))
-
-    #client_socket.close()
