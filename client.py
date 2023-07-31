@@ -7,7 +7,7 @@ sock.connect(("127.0.0.1", 7860))
 
 while True:
     # Send data to server
-    msg = "rm3100/all"
+    msg = "bme680/all"
     sock.send(msg.encode('utf-8'))
 
     # Receive data from server
