@@ -28,13 +28,22 @@ class BME680:
 		print("[EXTERN][BME680] BME680 is initialized")
 
 	def get_temp(self):
-		if self.sensor.get_sensor_data():
+		try:
+			self.sensor.get_sensor_data()
 			return self.sensor.data.temperature
+		except:
+			return None
 
 	def get_pressure(self):
-		if self.sensor.get_sensor_data():
+		try:
+			self.sensor.get_sensor_data()
 			return self.sensor.data.pressure
+		except:
+			return None
 
 	def get_humidity(self):
-		if self.sensor.get_sensor_data():
+		try:
+			self.sensor.get_sensor_data()
 			return self.sensor.data.humidity
+		except:
+			return None
