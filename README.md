@@ -2,6 +2,8 @@
 
 I2c interface in Python that is served over TCP that can connect to a multitude of different services. Primarily used for development in F'.
 
+This process can be generalized to communicate with a Python server through a TCP socket, using Python code within F Prime.
+
 ## Connecting
 
 Py2c opens up a TCP server on port **7860** (customizable). This is not a RESTful API, rather communication of bytestreams. 
